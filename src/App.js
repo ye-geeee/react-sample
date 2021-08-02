@@ -1,22 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  const name = '리액트';
-  const style = {
-    backgroundColor: 'black',
-    color: 'aqua',
-    fontSize: '48x',
-    fontWeight: 'bold',
-    padding: 16
-  };
+class App extends Component {
+  render() {
+    const name = '리액트';
 
-  return (
-    <div className="App" style={style}>
-      {name === '리액트' && (<h1>리액트입니다.</h1>)}
-      {/* comment */}
-    </div>
-  );
+    return (
+      <div>{name}</div>
+    );
+  }
 }
 
 export default App;
