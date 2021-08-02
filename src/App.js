@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App" style={style}>
       {name === '리액트' && (<h1>리액트입니다.</h1>)}
+      {/* comment */}
     </div>
   );
 }
