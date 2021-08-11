@@ -34,20 +34,20 @@ const EventPractice = () => {
       <input
         type="text"
         name="username"
-        placeholder="아무거나 입력해 보세요"
-        value={this.state.username}
-        onChange={this.handleChange}>
+        placeholder="사용자명"
+        value={username}
+        onChange={onChange}>
       </input>
       <input
         type="text"
         name="message"
         placeholder="아무거나 입력해 보세요"
-        value={this.state.message}
-        onChange={this.handleChange}
-        onKeyPress={this.handleKeyPress}>
+        value={message}
+        onChange={onChange}
+        onKeyPress={onKeyPress}>
       </input>
       <button
-        onClick={this.handleClick}
+        onClick={onClick}
       >확인</button>
     </div >
   );
