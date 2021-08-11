@@ -4,10 +4,11 @@ import Counter from './Counter';
 import Say from './Say'
 import EventPractice from './EventPractice';
 import ValidationSample from './ValidationSample';
+import RefSample from './RefSample';
 
 const App = () => {
   return (
-    <ValidationSample />
+    <RefSample />
   );
 };
 
