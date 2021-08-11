@@ -8,7 +8,7 @@ import RefSample from './RefSample';
 
 const App = () => {
   return (
-    <RefSample />
+    <ValidationSample />
   );
 };
 
