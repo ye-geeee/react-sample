@@ -11,8 +11,8 @@ class RefSample extends Component {
   render() {
     return (
       <div>
-        <input ref={RequestHeaderFieldsTooLarge.input}></input>
-      </div>
+        <input ref={this.input}></input>
+      </div >
     )
   }
 }
