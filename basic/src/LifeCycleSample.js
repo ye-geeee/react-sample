@@ -15,8 +15,8 @@ class LifeCycleSample extends Component {
 
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log('getDerivedStateFromProps');
-    if (nextProps.coloc !== prevState.color) {
-      return { color: nextProps.coloc };
+    if (nextProps.color !== prevState.color) {
+      return { color: nextProps.color };
     }
     return null;
   }
@@ -43,7 +43,7 @@ class LifeCycleSample extends Component {
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('getSnapshotBeforeUpdate');
-    if (prevProps.color !== this.props.coloc) {
+    if (prevProps.color !== this.props.color) {
       return this.myRef.style.color;
     }
     return null;
