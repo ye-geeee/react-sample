@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+
+(*) -> "Constructor"
+"Constructor" -> "getDerivedStateFromProps" 
+"getDerivedStateFromProps" -> "render"
+"render" -> "componentDidMount"
+"componentDidMount" -> (*)
+
+@enduml

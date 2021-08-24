@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+
+(*) -> "Props or State change or Parent component rerendering"
+"Props or State change or Parent component rerendering" -> "getDerivedStateFromProps" 
+"getDerivedStateFromProps" -> "shouldComponentUpdate"
+"shouldComponentUpdate" -> "render"
+"forceUpdate" --> "render"
+"render" -> "getSnapshotBeforeUpdate"
+"getSnapshotBeforeUpdate" -> "componentDidMount"
+"componentDidMount" -> (*)
+
+@enduml

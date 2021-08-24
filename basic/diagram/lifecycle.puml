@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+
+(*) -> "Mount"
+"Mount" -> "Update"
+"Update" -> "Unmount"
+"Unmount" -> (*)
+
+@enduml
