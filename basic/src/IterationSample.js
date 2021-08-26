@@ -30,15 +30,16 @@ const IterationSample = () => {
         </li >
     ));
 
+
     return (
-        <>
+        <div>
             <input value={inputText} onChange={onChange}></input>
             <button onClick={onClick}>추가</button>
             <ul>
                 {nameList}
             </ul>
-        </>
-    )
+        </div>
+    );
 }
 
 export default IterationSample;
