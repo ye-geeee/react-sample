@@ -9,6 +9,7 @@ import ScrollBox from './ScrollBox';
 import IterationSample from './IterationSample';
 import LifeCycleSample from './LifeCycleSample';
 import ErrorBoundary from './ErrorBoundary';
+import Info from './Info';
 
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -19,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Counter />
+        <Info />
       </div>
     )
   }
