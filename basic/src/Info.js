@@ -4,9 +4,8 @@ const Info = () => {
   const [name, setName] = useState('');
   const [nickName, setNickName] = useState('');
   useEffect(() => {
-    console.log('rendering ready');
-    console.log({ name, nickName });
-  });
+    console.log('only when mounted');
+  }, []);
 
   const onChangeName = e => {
     setName(e.target.value);
