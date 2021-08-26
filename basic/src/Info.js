@@ -4,8 +4,8 @@ const Info = () => {
   const [name, setName] = useState('');
   const [nickName, setNickName] = useState('');
   useEffect(() => {
-    console.log('only when mounted');
-  }, []);
+    console.log(name);
+  }, [name]);
 
   const onChangeName = e => {
     setName(e.target.value);
