@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 
 const getAverage = numbers => {
     console.log('Calculating average...');
@@ -21,6 +21,8 @@ const Average = () => {
         setNumber('');
     };
 
+    const avg = useMemo(() => getAverage(list), [list]);
+
     return (
         <div>
             <input value={number} onChange={onChange} />
@@ -31,7 +33,7 @@ const Average = () => {
                 ))}
             </ul>
             <div>
-                <b>Average:</b>{getAverage(list)}
+                <b>Average:</b>{avg}
             </div>
         </div>
     );
