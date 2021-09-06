@@ -10,6 +10,7 @@ import IterationSample from './IterationSample';
 import LifeCycleSample from './LifeCycleSample';
 import ErrorBoundary from './ErrorBoundary';
 import Info from './Info';
+import Average from './Average';
 
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -19,7 +20,7 @@ const App = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <Info />
+    <Average />
   );
 };
 
