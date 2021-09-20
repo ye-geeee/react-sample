@@ -24,18 +24,18 @@ const App = () => {
   const onInsert = useCallback(
     (text) => {
       const todo = { id: nextId.current, text, checked: false };
-      setTodos(todos.concat(todo));
+      setTodos((todos) => todos.concat(todo));
     },
     [todos],
   );
 
   const onRemove = useCallback((id) => {
-    setTodos(todos.filter((todo) => todo.id !== id));
+    setTodos((todos) => todos.filter((todo) => todo.id !== id));
   });
 
   const onToggle = useCallback(
     (id) => {
-      setTodos(
+      setTodos((todos) =>
         todos.map((todo) =>
           todo.id === id
             ? {
