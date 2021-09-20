@@ -1,27 +1,25 @@
-import React, { Component, useState } from 'react';
-import MyComponent from './MyComponent';
-import Counter from './Counter';
-import Say from './Say'
-import EventPractice from './EventPractice';
-import ValidationSample from './ValidationSample';
-import RefSample from './RefSample';
-import ScrollBox from './ScrollBox';
-import IterationSample from './IterationSample';
-import LifeCycleSample from './LifeCycleSample';
-import ErrorBoundary from './ErrorBoundary';
-import Info from './Info';
-import Average from './Average';
+import React, { Component, useState } from "react";
+import MyComponent from "./MyComponent";
+import Counter from "./Counter";
+import Say from "./Say";
+import EventPractice from "./EventPractice";
+import ValidationSample from "./ValidationSample";
+import RefSample from "./RefSample";
+import ScrollBox from "./ScrollBox";
+import IterationSample from "./IterationSample";
+import LifeCycleSample from "./LifeCycleSample";
+import ErrorBoundary from "./ErrorBoundary";
+import Info from "./Info";
+import Average from "./Average";
 
 function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 const App = () => {
   const [visible, setVisible] = useState(false);
 
-  return (
-    <Info />
-  );
+  return <Info />;
 };
 
 export default App;
